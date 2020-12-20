@@ -1,3 +1,31 @@
+//Practice: Defining the Chores
+
+//created factory function to create person objects
+const createPerson = (firstName, lastName) => {
+    const createdPerson = {
+        "firstName": firstName,
+        "lastName": lastName
+    }
+    return createdPerson
+}
+
+const dogWalking = person => `${person.firstName} ${person.lastName} took fluffy on a walk`
+const getGroceries = person => `${person.firstName} ${person.lastName} bought groceries`
+const vacuum = person => `${person.firstName} ${person.lastName} vacuumed the entire house`
+const cutGrass = person => `${person.firstName} ${person.lastName} cut the grass`
+const balanceCheckBook = person => `${person.firstName} ${person.lastName} ran the number on their checkbook`
+const washCar = person => `${person.firstName} ${person.lastName} washed the car`
+
+const dayPlanner = (chore1, chore2, chore3, person, day) => {
+    const choreLog = `On ${day}, ${chore1(person)}, and ${chore2(person)}, and ${chore3(person)}`
+    return choreLog
+}
+
+const daysResults = dayPlanner(vacuum, cutGrass, balanceCheckBook, createPerson("Yolanda", "Johnson"), "Monday")
+console.log(daysResults)
+
+//--------------------------------------------------------------------------------------------//
+
 //Practice: Same Chores, Different Days
 //Higher Order Function -- takes another function as a parameter
 
