@@ -1,3 +1,19 @@
+//Practice RandomNumbers game
+
+const oddsNumber = (Math.random() * 2);
+
+const goFishing = (oddsNumber) => {
+    if (oddsNumber <= 1) {
+        return "Sven hooked a tuna!  :)"
+    } else if (oddsNumber > 1) {
+        return "Sven came up empty-handed.  :("
+    }
+}
+
+console.log("Practice Random Numbers : ", goFishing(oddsNumber))
+
+//--------------------------------------------------------------------------------------------//
+
 //Practice: Double Function
 //make a sentence with the following array
 const words = [
@@ -28,6 +44,7 @@ const wantedSentence = makingSentence(unwantedWordsArray)
 
 console.log("Decrypted sentence : ", wantedSentence)
 
+//--------------------------------------------------------------------------------------------//
 
 //function for Evens or Odds
 const evenOrOdd = (number) => {
@@ -63,6 +80,7 @@ const go = (direction, speedInMph) => {
 const drivingMessage = go("forward", 74)
 console.log("Self-Driving Cars : ", drivingMessage)
 
+//--------------------------------------------------------------------------------------------//
 
 //simple sum of parameters function
 const add = (num1, num2, num3) => {
@@ -73,6 +91,7 @@ const sum = add(17, 4, 11)
 
 console.log("Result for Addition : ", sum)
 
+//--------------------------------------------------------------------------------------------//
 
 //function for Best in Show practice
 const bestInShow = (dogBreed) => {
@@ -88,6 +107,7 @@ const myFavorite = bestInShow("schnauzer");
 
 console.log("Result for bestInShow : ", myFavorite)
 
+//--------------------------------------------------------------------------------------------//
 
 //function for calculating dog years
 const calcAgeInDogYear = (currentAge) => {
