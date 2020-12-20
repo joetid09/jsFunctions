@@ -1,3 +1,11 @@
+const add = (num1, num2, num3) => {
+    return num1 + num2 + num3
+}
+
+const sum = add(17, 4, 11)
+
+console.log("Result for Addition", sum)
+
 //function for Best in Show practice
 const bestInShow = (dogBreed) => {
     //if user passes "meow" into bestInShow, a response for cats will appear
@@ -10,7 +18,7 @@ const bestInShow = (dogBreed) => {
 
 const myFavorite = bestInShow("schnauzer");
 
-console.log(myFavorite)
+console.log("Result for bestInShow", myFavorite)
 
 
 //function for calculating dog years
