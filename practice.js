@@ -1,3 +1,59 @@
+//Practice: Same Chores, Different Days
+//Higher Order Function -- takes another function as a parameter
+
+const twice = number => number * 2;
+const timesFive = number => number * 5;
+const square = number => number * number;
+
+const bigify = (number, operationFunction) => {
+    const result = operationFunction(number)
+    return result
+}
+
+const bigifyResult1 = bigify(2, twice);
+console.log("Bigify1 : ", bigifyResult1)
+
+const bigifyResult2 = bigify(2, timesFive);
+console.log("Bigify2 : ", bigifyResult2)
+
+const bigifyResult3 = bigify(2, square);
+console.log("Bigify3 : ", bigifyResult3)
+
+const twiceTwo = twice(2)
+console.log("twice two : ", twiceTwo)
+
+const twiceSix = twice(6)
+console.log("twice six : ", twiceSix)
+
+const twiceThirteen = twice(13)
+console.log("twicec 13 : ", twiceThirteen)
+
+const numTimesFive = timesFive(4)
+console.log("timesFive : ", numTimesFive)
+
+const squaring = square(13)
+console.log("square : ", squaring)
+
+//--------------------------------------------------------------------------------------------//
+
+//Practice: Fast Food
+
+const fastFoodOrder = (sammich, side, drink, dessert) => {
+    const orderTicket = {
+        "sandwich": sammich,
+        "side": side,
+        "drink": drink,
+        "dessert": dessert
+    }
+    return orderTicket
+}
+
+const receiptOfOrder = fastFoodOrder("Big Mac", "Fries", "Coke", "Brownie")
+
+console.log("Fast food order : ", receiptOfOrder)
+
+//--------------------------------------------------------------------------------------------//
+
 //Practice RandomNumbers game
 
 const oddsNumber = (Math.random() * 2);
