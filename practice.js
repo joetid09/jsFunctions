@@ -1,4 +1,22 @@
+//function for Evens or Odds
+const evenOrOdd = (number) => {
+    //stating that if number is divided by 2, then their is no remainer
+    if (number % 2 == 0) {
+        return "Even"
+    } else {
+        return "Odd"
+    }
+}
 
+
+const result = evenOrOdd(0)
+console.log("Result of Even or Odd : ", result)
+
+//running evenOrOdd function through an array of numbers using a foreach loop
+const arrayOfNumbers = [10, 2, 19, 4, 8, 29, 16]
+arrayOfNumbers.forEach(number => {
+    console.log(`Even/Odds in Array : ${number} is a ${evenOrOdd(number)} number`)
+})
 
 //function for self driving car function
 const go = (direction, speedInMph) => {
